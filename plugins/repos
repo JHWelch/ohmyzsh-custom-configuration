@@ -1,1 +1,10 @@
-https://github.com/djui/alias-tips
+#########################################################
+# Plugin repos
+# ----------------------------------------------
+# This file should have one https link to a repo per line
+# Each of these repos will be installed to the 
+# custom/plugins folder inside of ohmyzh.
+#########################################################
+
+# Example: alias-tips.
+# https://github.com/djui/alias-tips

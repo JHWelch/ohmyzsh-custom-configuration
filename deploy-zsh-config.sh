@@ -49,7 +49,7 @@ write_symlinks $BASEDIR ".zsh"
 write_symlinks $THEME_DIR ".zsh-theme"
 
 echo "---Cloning plugin repos---"
-PLUGIN_REPOS=$(cat ./plugins/repos)
+PLUGIN_REPOS=$(grep -o '^[^#]*' ./plugins/repos | sed  '/^$/d')
 PLUGINS="plugins"
 cd "$ZSH_CUSTOM_DIR$PLUGINS"
 for repo in $PLUGIN_REPOS
